@@ -1,0 +1,288 @@
+{
+  "schema": 1,
+  "device_functions": [
+    {
+      "path": "src/spark_vllm_ascend/kernels/attention.py",
+      "function": "AttentionStage.__init__",
+      "ast_sha256": "154d70132e15834053e66a89a705ed82097af9feb05af56a17447d71ad0e31eb"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/attention.py",
+      "function": "AttentionStage.initialize",
+      "ast_sha256": "9e819d07bef2deade10cf4e43aff9df1b70a9c4ba89cecd6c88d8795359cc041"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/attention.py",
+      "function": "AttentionStage.softmax",
+      "ast_sha256": "8e7e957844e7067f40121e5693660bca3174dc386a63384bcb42eca6bb3bea8f"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/attention.py",
+      "function": "AttentionStage.accumulate",
+      "ast_sha256": "f0d46243a9c116f5f1506509e9e0d5e8079052865bbe2d1d224496205b3ce156"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/attention.py",
+      "function": "AttentionStage.finish",
+      "ast_sha256": "1a615054f91bd3b8026e725431a840b83a946de88675484b8fed4344090e562f"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/attention.py",
+      "function": "AttentionStage.execute_serial",
+      "ast_sha256": "7bd60bf682ab4b348bf85cc4b152390488c3d43a9fda53f692f6f44c12d2f121"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/attention.py",
+      "function": "AttentionStage.prefetch_phase",
+      "ast_sha256": "216f0265985552a6b9d45fd86cb4fd7a506195bc01b0614aee969828735a1ddf"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/attention.py",
+      "function": "AttentionStage.execute_pipeline",
+      "ast_sha256": "580c7c1c83f3fc4bc4128edd2750ca60eadb3968b0a89ab77c53a7293f36930d"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/attention.py",
+      "function": "AttentionStage.execute",
+      "ast_sha256": "fd71e4e0bb6779f331defd71443bc31977c0e920a8da34268368b9e8791c05b0"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/vector.py",
+      "function": "gate_prepare",
+      "ast_sha256": "6e5c161222a782b8cdd2903d4c9af25191820886d6816df9deeac647d87a9897"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/vector.py",
+      "function": "merge_attention",
+      "ast_sha256": "b1b3c1d5a7a13eaf5d1a48b8895fd484beda330a36d5ded804be0146d6833aee"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/qkv.py",
+      "function": "FusedQkvStage.__init__",
+      "ast_sha256": "22ad995fe6b11f3c02028b1624c0402a1555288ce208037bb4b4e3b060a04c56"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/qkv.py",
+      "function": "FusedQkvStage.calculate_rotated",
+      "ast_sha256": "30d364f627663d77f9050d5129e95192d0b09b65b6d12c9a872e3ab6acf2385c"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/qkv.py",
+      "function": "FusedQkvStage.store8",
+      "ast_sha256": "984f03c624b495ec2cae11ae8a06ed64312b1b7c19d1009791958857d496d78e"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/qkv.py",
+      "function": "FusedQkvStage.execute_fused",
+      "ast_sha256": "8a611e1e7efd200b02b428c78a9332137e55fb3a0ebd5f63cc82dcf61b3709f7"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/qkv.py",
+      "function": "FusedQkvStage.gate_from_expanded_input",
+      "ast_sha256": "9db30424a9431b4940beb61638f50dc696ef4d594a25947375820a4bb77f67af"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "GemvStage.calculate",
+      "ast_sha256": "8d37fb729b0b7032bd76b495f8d3fe1e9d2d371d9c4cc75a8c2ea805c08f9b3f"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "norm_ub",
+      "ast_sha256": "bcef40f26e3d0610b9faebc76f41d45528ebc425756bd47ab80e2ea1e2882eb1"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "FusedUpStage.activate",
+      "ast_sha256": "e7485138d09ded0767c08cf2635e5de8ef07d70090e3704eac831f9319799d1b"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "prior_vector_reads_complete",
+      "ast_sha256": "eb395a7fdc84aa8264120db8ba64854c2b68baf6a00c2625a216efeca436aba5"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "NativePool.__init__",
+      "ast_sha256": "e46357f954292f808a40fd715b62ccf615c18bec28230435091e8abfd1e2d78c"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "NativePool.prefetch_metadata",
+      "ast_sha256": "ec126481e17a89c731b7237f900cf0aaaf1c66f3cf203be75bcfe896a3170a2d"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "NativePool.final_norm",
+      "ast_sha256": "ee134bdbfcafafc05429ff311d23b3174dc6e3bca8b8494b2172dcfdc00a0e2e"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "NativeLinear.__init__",
+      "ast_sha256": "13f0544fedbc958e961501feb691890fe245dbf92fb40c7513d5cfe57cbefc25"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "NativeLinear.expand_input",
+      "ast_sha256": "f62a5b1949ae612986077b68257667cb37f900c3eeaca81fa0d9fea3b396d037"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "NativeLinear.load_slot",
+      "ast_sha256": "731494ed0f736fa6c8757fe1a1270783b64c5685e5ef12bcd5fe2256e500816d"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "NativeLinear.prefetch_o",
+      "ast_sha256": "5e20514ed782d1b5a090f47339a067eacf5c0885554788aa131e771e9f5f8592"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "NativeLinear.execute_o",
+      "ast_sha256": "099168db62b7449851fff07c0b0d7489384b3c91c6a28c3c8f2e61941e65be45"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "NativeLinear.execute_down",
+      "ast_sha256": "c65bc55072532812db93254d1a142acdc419423c33dfafaf860a59a265156f8a"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "NativeUp.__init__",
+      "ast_sha256": "244108cd3cb5880884c36b7f4b65b0fae82417adf05f5aba92eead79058bef2e"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "NativeUp.calculate",
+      "ast_sha256": "840e420214d4a940bc4f5dcd53e06bc234a6a4bb1e4ea8a821dd4ee73894b081"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "NativeUp.activate_native",
+      "ast_sha256": "4215b82819f4f44bbfab408e200c9a09cd8c384d98fc3c208b57955a5711cc12"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "NativeUp.prefetch_first_weight",
+      "ast_sha256": "6863785b09bbcdd866b612318d5f8fe98e0201db7bb7b49a83dac25abdfec22a"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/linear.py",
+      "function": "NativeUp.execute",
+      "ast_sha256": "4ee473d14943622b921ac0808d8296133d085033fdf7cc1c43757a4c7523c435"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/layer.py",
+      "function": "UBArena.__init__",
+      "ast_sha256": "8beb313c95ab4b03a160d3d0889316d0f1e0da239c2d8ae7e3c139b7b88fcfad"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/layer.py",
+      "function": "UBArena.rewind",
+      "ast_sha256": "945eeb915c90b59ada2fe11e4a0c311e646eae0e90c038c0406c88e2a381d3bb"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/layer.py",
+      "function": "UBArena.view",
+      "ast_sha256": "ff7e5d965e66c365f90606ae7c0f0de6f6a8cc0c06d9ae0903e2e7dd6e9acfaf"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/layer.py",
+      "function": "UBArena.channel",
+      "ast_sha256": "3385d80e7e44e999f3307de9df0a61ca849add5a497f2050fc9ea2c534a6c1ee"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/layer.py",
+      "function": "UBArena.buffer",
+      "ast_sha256": "befa76cbcc07faf2a2e8a4a836f0ea8354576b054dc6ce7bb94b9aee2f1289f5"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/layer.py",
+      "function": "DecodeLayer.__init__",
+      "ast_sha256": "737145b7ee8a7d77e8c9ee54ebe82cfbbb63962e6ef1cdcc4fb36fb32de120e1"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/layer.py",
+      "function": "DecodeLayer.kernel",
+      "ast_sha256": "44914aa0632aad4a2e36b544a68ac8b9e4ad8fab49901a75cc0b63950cb9ec18"
+    },
+    {
+      "path": "src/spark_vllm_ascend/kernels/layer.py",
+      "function": "DecodeLayer.run",
+      "ast_sha256": "cf8b623f57e78e34fa3d8fc47ab86b872fa2921c7e71f7948c72ee96b95e2661"
+    }
+  ],
+  "scope": "AST includes decorators, arguments and exact operation order; excludes source locations and comments. Runtime verification is separate.",
+  "host_functions": [
+    {
+      "path": "src/spark_vllm_ascend/integration/weights.py",
+      "function": "reader",
+      "ast_sha256": "52e4188e57fad22a5d1d550ebbbcf97dc20c75a52d0e6ea84a72bfd16fc62775"
+    },
+    {
+      "path": "src/spark_vllm_ascend/integration/weights.py",
+      "function": "hf_name",
+      "ast_sha256": "add45b4f36753d3074188555836fdbaeeb0c438dfdde7902b5a9c39070c234f9"
+    },
+    {
+      "path": "src/spark_vllm_ascend/integration/weights.py",
+      "function": "weights",
+      "ast_sha256": "f3cfab642a03f4ed1df24ba55728df0e9f6d0c957c19374a58cec5ad0253ea49"
+    },
+    {
+      "path": "src/spark_vllm_ascend/integration/weights.py",
+      "function": "unpack_q4",
+      "ast_sha256": "e24c4d75b6b259268cc0a70f98d6a57f8ffa27456be60a8c8fa7429d0aeb5c8a"
+    },
+    {
+      "path": "src/spark_vllm_ascend/integration/weights.py",
+      "function": "pack",
+      "ast_sha256": "605701a033225d793dc1e337f555a8e8f6b6cc623b91686821afc949f01754ca"
+    },
+    {
+      "path": "src/spark_vllm_ascend/integration/weights.py",
+      "function": "layer_arrays",
+      "ast_sha256": "23991a8eef1497098eb647f021c375929e33264eb9aec7fb518e2c0883d04a9c"
+    },
+    {
+      "path": "src/spark_vllm_ascend/integration/weights.py",
+      "function": "pack_layer",
+      "ast_sha256": "8a096397b24a0bed0792812b235900d82d2749f18bc661284b2d7baa3ce0a18f"
+    },
+    {
+      "path": "src/spark_vllm_ascend/integration/weights.py",
+      "function": "attention_arrays",
+      "ast_sha256": "54677e66bba8733b64ce316e0ee761c1792b2c2c84ed6e4166dc2aa10059714d"
+    },
+    {
+      "path": "src/spark_vllm_ascend/integration/weights.py",
+      "function": "pack_attention",
+      "ast_sha256": "695bdb2c1d7d69ffd8139744fe01669716570ec8d625cfc0dfe164e71925b5a9"
+    },
+    {
+      "path": "src/spark_vllm_ascend/integration/model.py",
+      "function": "local_nz",
+      "ast_sha256": "ddff2183f17d89ca9cd59222af8daa5909a980fa69661ae0659d99e4c62f572f"
+    },
+    {
+      "path": "src/spark_vllm_ascend/integration/model.py",
+      "function": "run_layer",
+      "ast_sha256": "ae80024e25745d142e2282b8fe0974ccbdbba2226a174b543a1b2b5880b8daab"
+    }
+  ],
+  "file_sha256": {
+    "src/spark_vllm_ascend/integration/rope.py": "b6b892d4e4c072e80407c67706aba43115e1e7006ea909eaf03096f006a1c6fc",
+    "src/spark_vllm_ascend/integration/slot_mapping.py": "f88846a0f2fd81c238cf12b15a03a6a1bf84e0c92cf3510218c5fe1872174370",
+    "src/spark_vllm_ascend/integration/head.py": "6b98b94741f8f97117bf4218d1b8e9039994455cd1f36667d825c257be317e1f",
+    "src/spark_vllm_ascend/native/head/build.py": "9a357a23ab6735d39ae2ac114641e9fad9dca50be6b32caa8746c961f7da825e",
+    "src/spark_vllm_ascend/native/head/extension.cpp": "e1a7f31b7cd46463db4ada68e5bd35ed2bb6532ff9acf201da60d5ad979ea517",
+    "src/spark_vllm_ascend/native/head/head_q6.h": "52cb6ce1da97ed65e65776af6b84590115baa99b3b2ea966f5cc33c5fc4a9708",
+    "src/spark_vllm_ascend/native/head/head_q6.asc": "3f90dd95ef66bd9130324452af027b8fbe55b2638f0f1b53027daa1aec10d8bb",
+    "src/spark_vllm_ascend/native/head_reference/build.py": "ba1c6e66f7cfec66b1c58cb7d4760b8db78f5610a527483c75d1e7c555ecd918",
+    "src/spark_vllm_ascend/native/head_reference/extension.cpp": "024875dfd52960412b5e661dc2b42237fbc486e43e8fb72f65fa5f8e50c23ee9",
+    "src/spark_vllm_ascend/native/head_reference/head_bf16.h": "8f55e62c51291e77c7906de79a5b07417f8b204168d926afc85a9c524dc0b7bc",
+    "src/spark_vllm_ascend/native/head_reference/head_bf16.asc": "b5e28400fb7ed10536fcfb97c2ebe379d2b6aa1aeedbf5c52ae6550fa38af286",
+    "src/tools/validation/guard.py": "949144e829e0b61f7669547b0a7f4dc0030a9fb1d817134d7aaa8a81d46daed0",
+    "src/tools/validation/device_snapshot.py": "6ffe7f6e015951f209ffde385f37ad34946d0d378b552bbd5281da925eb6620f"
+  }
+}

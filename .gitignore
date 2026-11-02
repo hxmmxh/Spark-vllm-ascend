@@ -1,0 +1,37 @@
+# Local environments, generated deployment copies and benchmark work directories.
+/.venv/
+/venv/
+/spark-work*/
+/spark-deploy*/
+/deployment/resolved/
+/deployment-profile.json
+/DEPLOYMENT_SHA256SUMS
+/.cache/
+/.ssh/
+/.ssh-control/
+.env
+.env.*
+!.env.example
+.DS_Store
+
+# Python and native build products.
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+build/
+dist/
+*.o
+*.so
+*.a
+
+# Downloaded installers, model weights and runtime logs.
+*.run
+*.whl
+*.gguf
+*.safetensors
+*.pt
+*.pth
+*.zip
+*.tar.gz
+*.log

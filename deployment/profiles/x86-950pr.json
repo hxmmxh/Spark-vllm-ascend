@@ -1,0 +1,16 @@
+{
+  "schema": 1,
+  "name": "x86-950pr",
+  "host_arch": "x86_64",
+  "soc_version": "ascend950pr_957b",
+  "npu_arch": "dav-3510",
+  "python": "3.12",
+  "dependency_lock": "../locks/x86-950pr.json",
+  "base_triton": "3.2.0",
+  "restore_triton_backend": false,
+  "nnal_env": "nnal/atb/9.1.0/atb/set_env.sh",
+  "kernel_launch": {
+    "mixed_blocks": 28,
+    "vector_lanes": 56
+  }
+}
